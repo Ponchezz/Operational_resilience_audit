@@ -14,21 +14,19 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data & outputs (keep local, not in git)
-data/*.*        # keep the folder, not the files
-!data/.gitkeep  # allow placeholder
+data/*.*        # keep the folder, not the raw files
+!data/.gitkeep  # allow a placeholder
 output/
 outputs/
 
-# Big binary artifacts (keep in Releases or use Git LFS)
-*.png
-*.pdf
-*.html
+# Big binary artifacts (keep in Releases or LFS)
 *.pptx
 *.docx
+*.pdf
+*.html
+*.png
 
-# OS noise
+# OS noise / secrets
 .DS_Store
 Thumbs.db
-
-# Secrets
 kaggle.json
